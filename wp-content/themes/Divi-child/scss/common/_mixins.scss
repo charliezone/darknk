@@ -1,0 +1,31 @@
+@mixin media-max($width){
+	@media screen and (max-width: $width){
+		@content;
+	}
+}
+
+@mixin media-min($width){
+	@media screen and (min-width: $width){
+		@content;
+	}
+}
+
+@mixin media-between($min-width, $max-width){
+	@media screen and (min-width: $min-width) and (max-width: $max-width){
+		@content;
+	}
+}
+
+@mixin cta-button($bcolor: $cornflower-blue, $bgc: $white, $color: $cornflower-blue){
+	color: $color!important;
+	display: block!important;
+	border-radius: 0!important;
+	padding: 5px 10px!important;
+	width: fit-content!important;
+	background-color: $bgc!important;
+	border: 1px solid $bcolor!important;
+
+	&:after{
+		content: ''!important;
+	}
+}

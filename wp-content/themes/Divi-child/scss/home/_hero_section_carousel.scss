@@ -1,0 +1,52 @@
+.hero-carousel{
+    position: relative;
+    height: calc(100vh - 80px);
+
+    .et_pb_slides,
+    .et_pb_slide,
+    .et_pb_slider_container_inner,
+    .et_pb_slide_description{
+        height: 100%;
+    }
+
+    @include media-max($tablet){
+        .et_pb_slide_description{
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    h2{
+        right: 5%;
+        bottom: 50px;
+        position: absolute;
+
+        @include media-max($tablet){
+            position: relative;
+            text-align: center!important;
+    
+            & br{ display: none; }
+        }
+    }
+
+    .et-pb-controllers{
+        top: 50px;
+        bottom: unset;
+        display: flex;
+        padding-right: 12%;    
+        justify-content: flex-end;
+    }
+}
+
+.hero-section-carousel-container{
+    position: relative;
+
+    h4{
+        bottom: 30vh;
+        color: $white;
+        position: absolute;
+        z-index: $z_index_2;
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+}

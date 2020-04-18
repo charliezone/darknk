@@ -1,0 +1,11 @@
+@include media-max($tablet){
+    .et-social-facebook{
+        margin-left: 0!important;       
+    }
+
+    #menu-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

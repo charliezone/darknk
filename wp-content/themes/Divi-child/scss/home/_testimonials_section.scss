@@ -1,0 +1,27 @@
+.testimonials-section{
+    .wpmtst-testimonial.t-slide{
+        border-radius: 5px;
+        background-color: $mercury;
+        border-top-color: $mercury!important;
+        border-left-color: $mercury!important;
+        border-right-color: $mercury!important;
+        border-bottom-color: $mercury!important;
+    }
+
+    .wpmtst-testimonial-inner{
+        border-top-color: $mercury!important;
+        border-left-color: $mercury!important;
+        border-right-color: $mercury!important;
+        border-bottom-color: $mercury!important;
+    }
+
+    .wpmtst-testimonial-heading,
+    .wpmtst-testimonial-content p,
+    .testimonial-name{
+        color: $cornflower-blue;
+    }
+
+    .testimonial-name{
+        font-weight: bold;
+    }
+}

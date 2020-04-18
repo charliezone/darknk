@@ -1,0 +1,29 @@
+.newsletter-section{
+    position: relative;
+    
+    h4{
+        left: 10px;
+        bottom: 30vh;
+        color: $white;
+        font-size: 26px;
+        position: absolute;
+        letter-spacing: 7px;
+        transform: rotate(-90deg);
+    }
+
+    .emaillist{
+        label{
+            color: $white;
+        }
+    
+        .es_txt_email{
+            width: 60%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"]{
+            margin-top: 10px;
+            @include cta-button();
+        }
+    } 
+}

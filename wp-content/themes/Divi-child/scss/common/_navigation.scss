@@ -1,0 +1,9 @@
+@include media-max($tablet){
+    #main-header{
+        background-color: $navbar!important;
+
+        .mobile_menu_bar_toggle:before{
+            color: $white!important;
+        }
+    }
+}

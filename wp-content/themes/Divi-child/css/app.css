@@ -1,8 +1,303 @@
-.home {
-  display: inline;
+/* Colors */
+
+/* Z index values */
+
+/* Max Media Querys */
+
+@media screen and (max-width: 980px) {
+  #main-header {
+    background-color: #080e14 !important;
+  }
+
+  #main-header .mobile_menu_bar_toggle:before {
+    color: #ffffff !important;
+  }
 }
 
-.home .paragra {
-  color: blue;
+@media screen and (max-width: 980px) {
+  .et-social-facebook {
+    margin-left: 0 !important;
+  }
+
+  #menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* Navigation */
+
+@media screen and (max-width: 980px) {
+  #main-header {
+    background-color: #080e14 !important;
+  }
+
+  #main-header .mobile_menu_bar_toggle:before {
+    color: #ffffff !important;
+  }
+}
+
+/* Home */
+
+.hero-carousel {
+  position: relative;
+  height: calc(100vh - 80px);
+}
+
+.hero-carousel .et_pb_slides,
+.hero-carousel .et_pb_slide,
+.hero-carousel .et_pb_slider_container_inner,
+.hero-carousel .et_pb_slide_description {
+  height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .hero-carousel .et_pb_slide_description {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero-carousel h2 {
+  right: 5%;
+  bottom: 50px;
+  position: absolute;
+}
+
+@media screen and (max-width: 980px) {
+  .hero-carousel h2 {
+    position: relative;
+    text-align: center !important;
+  }
+
+  .hero-carousel h2 br {
+    display: none;
+  }
+}
+
+.hero-carousel .et-pb-controllers {
+  top: 50px;
+  bottom: unset;
+  display: flex;
+  padding-right: 12%;
+  justify-content: flex-end;
+}
+
+.hero-section-carousel-container {
+  position: relative;
+}
+
+.hero-section-carousel-container h4 {
+  bottom: 30vh;
+  color: #ffffff;
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.top-rank-title-container {
+  display: flex;
+  margin-right: 10%;
+  justify-content: flex-end;
+}
+
+.top-rank-title-container img {
+  margin-right: 10px;
+}
+
+.top-rank-carousel .owl-stage-outer {
+  margin-top: 50px;
+}
+
+.top-rank-carousel .owl-nav.topright {
+  right: unset;
+  left: 15px;
+  top: -50px !important;
+}
+
+.top-rank-carousel .read-more {
+  color: #0b1016 !important;
+  display: block !important;
+  border-radius: 0 !important;
+  padding: 5px 10px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: #ffffff !important;
+  border: 1px solid #0b1016 !important;
+  margin-top: 10px;
+}
+
+.top-rank-carousel .read-more:after {
+  content: "" !important;
+}
+
+.top-rank-carousel .add_to_cart_button,
+.top-rank-carousel .added_to_cart {
+  color: #ffffff !important;
+  display: block !important;
+  border-radius: 0 !important;
+  padding: 5px 10px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: #0b1016 !important;
+  border: 1px solid #0b1016 !important;
+}
+
+.top-rank-carousel .add_to_cart_button:after,
+.top-rank-carousel .added_to_cart:after {
+  content: "" !important;
+}
+
+.top-rank-carousel .added_to_cart {
+  margin-top: 10px;
+}
+
+.top-rank-carousel .owl-dots .owl-dot {
+  border: 0;
+  width: 7px !important;
+  padding: 0 !important;
+  height: 7px !important;
+}
+
+.top-rank-section {
+  position: relative;
+}
+
+.top-rank-section h4 {
+  top: -80px;
+  left: 55px;
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  color: #0b1016;
+  transform: rotate(-90deg);
+}
+
+.merbership-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.merbership-section:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.merbership-section .et_pb_promo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 980px) {
+  .merbership-section .et_pb_promo {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.merbership-section .et_pb_promo .et_pb_promo_description {
+  padding-bottom: 0;
+}
+
+.merbership-section .et_pb_promo p {
+  width: 80%;
+}
+
+@media screen and (max-width: 980px) {
+  .merbership-section .et_pb_promo p {
+    width: 100%;
+  }
+}
+
+.merbership-section .et_pb_promo .et_pb_button_wrapper {
+  display: block;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 980px) {
+  .merbership-section .et_pb_promo .et_pb_button_wrapper {
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+}
+
+.testimonials-section .wpmtst-testimonial.t-slide {
+  border-radius: 5px;
+  background-color: #E9E9E9;
+  border-top-color: #E9E9E9 !important;
+  border-left-color: #E9E9E9 !important;
+  border-right-color: #E9E9E9 !important;
+  border-bottom-color: #E9E9E9 !important;
+}
+
+.testimonials-section .wpmtst-testimonial-inner {
+  border-top-color: #E9E9E9 !important;
+  border-left-color: #E9E9E9 !important;
+  border-right-color: #E9E9E9 !important;
+  border-bottom-color: #E9E9E9 !important;
+}
+
+.testimonials-section .wpmtst-testimonial-heading,
+.testimonials-section .wpmtst-testimonial-content p,
+.testimonials-section .testimonial-name {
+  color: #0b1016;
+}
+
+.testimonials-section .testimonial-name {
+  font-weight: bold;
+}
+
+.newsletter-section {
+  position: relative;
+}
+
+.newsletter-section h4 {
+  left: 10px;
+  bottom: 30vh;
+  color: #ffffff;
+  font-size: 26px;
+  position: absolute;
+  letter-spacing: 7px;
+  transform: rotate(-90deg);
+}
+
+.newsletter-section .emaillist label {
+  color: #ffffff;
+}
+
+.newsletter-section .emaillist .es_txt_email {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.newsletter-section .emaillist input[type=submit] {
+  margin-top: 10px;
+  color: #0b1016 !important;
+  display: block !important;
+  border-radius: 0 !important;
+  padding: 5px 10px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: #ffffff !important;
+  border: 1px solid #0b1016 !important;
+}
+
+.newsletter-section .emaillist input[type=submit]:after {
+  content: "" !important;
 }
 

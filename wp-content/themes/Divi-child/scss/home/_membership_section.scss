@@ -1,0 +1,51 @@
+.merbership-section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    &:after{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: $z_index_1;
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+
+    .et_pb_promo{
+        display: flex;
+        justify-content: space-between;
+
+        @include media-max($tablet){
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .et_pb_promo_description{
+            padding-bottom: 0;
+        }
+
+        p{
+            width: 80%;
+
+            @include media-max($tablet){
+                width: 100%;
+            }
+        }
+
+        .et_pb_button_wrapper{
+            display: block;
+            align-self: flex-end;
+
+            @include media-max($tablet){
+                align-self: flex-start;
+                margin-top: 15px;
+            }
+        }
+    }
+}
