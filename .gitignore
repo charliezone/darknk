@@ -12,8 +12,7 @@ wp-content/*
 
 # ignore these plugins
 wp-content/plugins/hello.php
-wp-content/plugins/wp-migrate-db/
-wp-content/mu-plugins/
+wp-content/uploads/wp-migrate-db/
 wp-content/plugins/query-monitor/
 # ignore specific themes
 
