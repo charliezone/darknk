@@ -1,0 +1,101 @@
+@include media-min($tablet){
+    .blog-section{
+        article{
+            display: grid;
+            padding: 0 11%;
+            position: relative;
+            grid-template-rows: 1fr;
+    
+            &:after{ display: none; }
+    
+            &:nth-child(even){
+                grid-template-columns: 60% 40%;
+    
+                .entry-featured-image-url{
+                    grid-column: 2 / 3;
+                }
+    
+                .entry-title,
+                .post-content{
+                    grid-column: 1 / 2;
+                }
+    
+                .entry-title{
+                    margin-left: 65px;
+                }
+            }
+    
+            &:nth-child(odd){
+                grid-template-columns: 40% 60%;
+                
+                .entry-featured-image-url{
+                    grid-column: 1 / 2;
+                }
+    
+                .entry-title,
+                .post-content{
+                    grid-column: 2 / 3;
+                }
+    
+                .entry-title{
+                    margin-left: 65px;
+                }
+            }
+    
+            .entry-title{
+                width: 45%;
+                grid-row: 1 / 2;
+            }
+    
+            .post-content{
+                top: 120px;
+                grid-row: 1 / 2;
+                position: absolute;
+                padding: 10px 15px 0 80px;
+                border-top: 1.5px solid $cornflower-blue;
+
+                p{ text-align: left; }
+            }
+    
+            .post-meta{
+                display: none;
+            }
+    
+            &:nth-last-of-type(1){
+                display: block;
+                padding: 0;
+                position: relative;
+    
+                &:after{
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    visibility: visible;
+                    z-index: $z_index_1;
+                    background-color: rgba($color: #000000, $alpha: .2);
+                }
+    
+                .post-content{ display: none; }
+    
+                .entry-featured-image-url img{
+                    width: 100%;
+                }
+    
+                .entry-title{
+                    width: 60%;
+                    color: $white;
+                    bottom: 100px;
+                    line-height: 30px;
+                    position: absolute;
+                    z-index: $z_index_2;
+                }
+            }
+        }
+    }
+}
