@@ -1,3 +1,5 @@
+.cartcontents{ visibility: hidden; }
+
 @include media-max($tablet){
     #main-header{
         background-color: $navbar!important;

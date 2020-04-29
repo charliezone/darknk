@@ -1,8 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const metaList = document.querySelectorAll('.hero-section-carousel .et_pb_slide .et_pb_slide_content a[rel="category tag"]:nth-last-child(1)')
-    metaList.forEach(e => {
-        const postMeta = e.parentNode
-        postMeta.innerHTML = '/ ' + e.textContent
-        postMeta.style.display = 'block'
-    })
-})
+(jQuery)($ => {
+    $(document).ready(() => {
+        let cart = document.querySelector('.wpmenucart-display-standard .cartcontents');
+        if(cart){
+            cart.textContent = cart.textContent.match(/\d+/g)[0];
+            cart.style.visibility = 'visible';
+        }
+
+        $( document.body ).on( 'adding_to_cart added_to_cart removed_from_cart updated_wc_div ', () => {
+            cart = document.querySelector('.wpmenucart-display-standard .cartcontents');
+            console.log(cart.textContent.match(/\d+/g)[0]);
+            cart.textContent = cart.textContent.match(/\d+/g)[0];
+            cart.style.visibility = 'visible';
+        });
+    });
+});

@@ -1,58 +1,38 @@
-.top-rank-title-container{
-    display: flex;
-    margin-right: 10%;
-    justify-content: flex-end;
-
-    img{
-        margin-right: 10px;
-    }
-}
-
-.top-rank-carousel{ 
-    .owl-stage-outer{
-        margin-top: 50px;
-    }
-
-    .owl-nav.topright{
-        right: unset;
-        left: 15px;
-        top: -50px!important;
-    }
-
-    .read-more{
-       @include cta-button();
-       margin-top: 10px;
-    }
-
-    .add_to_cart_button,
-    .added_to_cart{
-        @include cta-button($cornflower-blue, $cornflower-blue, $white);
-    }
-
-    .added_to_cart{
-        margin-top: 10px;
-    }
-
-    .owl-dots{
-        .owl-dot{
-            border: 0;
-            width: 7px!important;
-            padding: 0!important;
-            height: 7px!important;
-        }
-    }
-}
-
 .top-rank-section{
-    position: relative;
+    .top-rank-text{
+        padding: 0 21.5%;
 
-    h4{
-        top: -80px;
-        left: 55px;
-        position: absolute;
-        z-index: $z_index_2;
-        display: inline-block;
-        color: $cornflower-blue;
-        transform: rotate(-90deg);
+        .subtitle{
+            color: $white;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            padding: 26px 0 26px 50px;
+            font-family: $medium-italic;
+            background-color: $cornflower-blue;
+        }
+
+        .title{
+            font-size: 48px;
+            padding-left: 50px;
+            font-family: $bold;
+            margin-bottom: 30px;
+            letter-spacing: 0.67px;
+            color: $cornflower-blue;
+            border-bottom: solid 5px $cornflower-blue;
+        }
+
+        .content{
+            font-size: 24px;
+            font-weight: 300;
+            padding-left: 50px;
+            font-family: $light;
+            letter-spacing: 1px;
+            margin-bottom: 45px;
+        }
+
+        .cta-btn{
+            @include cta-button();
+        }
     }
 }

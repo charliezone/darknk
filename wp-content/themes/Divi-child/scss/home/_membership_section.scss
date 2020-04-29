@@ -1,51 +1,70 @@
 .merbership-section{
     display: flex;
-    position: relative;
-    flex-direction: column;
+    align-items: center;
 
-    &:after{
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        z-index: $z_index_1;
-        background-color: rgba($color: #000000, $alpha: .5);
+    .et_pb_row_1{
+        display: flex;
+        align-items: center;
     }
 
-    .et_pb_promo{
-        display: flex;
-        justify-content: space-between;
+    .membership-content-left{
+        .et_pb_blurb_content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-        @include media-max($tablet){
-            align-items: center;
+            .et_pb_blurb_container{
+                order: 1;
+            }
+
+            .et_pb_blurb_container .et_pb_module_header{
+                color: $white;
+                font-size: 60px;
+                font-family: $bold;
+                margin-bottom: 45px;
+                letter-spacing: 2.5px;
+            }
+
+            .et_pb_blurb_container .et_pb_blurb_description{
+                color: $white;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 45px;
+                font-family: $medium;
+                letter-spacing: 1.5px;
+            }
+
+            .et_pb_main_blurb_image{
+                order: 2;
+
+                .et-pb-icon{
+                    color: $white;
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+
+    .membership-content-right{
+        .et_pb_text_inner{
+            display: flex;
+            align-items: flex-end;
             flex-direction: column;
         }
 
-        .et_pb_promo_description{
-            padding-bottom: 0;
+        .et_pb_text_inner p{
+            color: $white;
+            font-size: 24px;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-family: $regular;
         }
 
-        p{
-            width: 80%;
-
-            @include media-max($tablet){
-                width: 100%;
-            }
-        }
-
-        .et_pb_button_wrapper{
-            display: block;
-            align-self: flex-end;
-
-            @include media-max($tablet){
-                align-self: flex-start;
-                margin-top: 15px;
-            }
+        .cta-btn{
+            @include cta-button($white, $transparent, $white);
+            margin-top: 25px;
         }
     }
 }

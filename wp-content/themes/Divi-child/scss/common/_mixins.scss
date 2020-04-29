@@ -17,13 +17,16 @@
 }
 
 @mixin cta-button($bcolor: $cornflower-blue, $bgc: $white, $color: $cornflower-blue){
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-family: $regular;
 	color: $color!important;
 	display: block!important;
-	border-radius: 0!important;
-	padding: 5px 10px!important;
+	padding: 7px 24px!important;
+	border-radius: 8px!important;
 	width: fit-content!important;
 	background-color: $bgc!important;
-	border: 1px solid $bcolor!important;
+	border: 2px solid $bcolor!important;
 
 	&:after{
 		content: ''!important;
