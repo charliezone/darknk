@@ -1,8 +1,33 @@
 .cartcontents{ visibility: hidden; }
 
+#main-header{
+    .menu-item a{
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: $light;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    
+    .current-menu-item a{
+        font-family: $bold;
+        color: $white!important;
+    }
+}
+
 @include media-max($tablet){
     #main-header{
         background-color: $navbar!important;
+
+        .menu-item a,
+        .current-menu-item a{
+            color: $cornflower-blue!important;
+        }
+
+        .et_mobile_menu{
+            border-top: 3px solid $cornflower-blue;
+        }
 
         .mobile_menu_bar_toggle:before{
             color: $white!important;

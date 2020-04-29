@@ -8,6 +8,52 @@
 
 .testimonials-section-overlay{
     height: 100vh;
+    display: flex;
     margin-top: -100vh;
     background-color: transparent;
+
+    .et_pb_row{
+        display: flex;
+        align-items: center;
+
+        @include media-max($tablet){
+            display: block;
+        }
+    }
+
+    .testimonial-content-left{
+        h3{
+            color: $white;
+            font-size: 60px;
+            font-family: $bold;
+            line-height: normal;
+            margin-bottom: 45px;
+            letter-spacing: 2.5px;
+
+            @include media-max($tablet){
+                font-size: 40px;
+            }
+        }
+
+        p{
+            color: $white;
+            font-size: 24px;
+            font-family: $bold;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-weight: normal;
+            font-stretch: normal;
+
+            @include media-max($tablet){
+                font-size: 18px;
+            }
+        }
+
+        .cta-btn{
+            @include cta-button($white, $transparent, $white);
+            margin-left: auto;
+        }
+    }
 }

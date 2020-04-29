@@ -2,9 +2,17 @@
     display: flex;
     align-items: center;
 
+    @include media-max($tablet){
+        display: block;
+    }
+
     .et_pb_row_1{
         display: flex;
         align-items: center;
+
+        @include media-max($tablet){
+            display: block;
+        }
     }
 
     .membership-content-left{
@@ -23,6 +31,10 @@
                 font-family: $bold;
                 margin-bottom: 45px;
                 letter-spacing: 2.5px;
+
+                @include media-max($tablet){
+                    font-size: 40px;
+                }
             }
 
             .et_pb_blurb_container .et_pb_blurb_description{
@@ -35,12 +47,15 @@
                 letter-spacing: 1.5px;
             }
 
-            .et_pb_main_blurb_image{
+            .wp-video-popup{
                 order: 2;
+                border: none;
+                background-color: transparent;
 
                 .et-pb-icon{
                     color: $white;
                     font-size: 46px;
+                    cursor: pointer;
                 }
             }
         }
@@ -60,6 +75,10 @@
             letter-spacing: 1px;
             text-align: justify;
             font-family: $regular;
+
+            @include media-max($tablet){
+                text-align: left;
+            }
         }
 
         .cta-btn{
@@ -67,4 +86,8 @@
             margin-top: 25px;
         }
     }
+}
+
+.popup-wraper{
+    display: none;
 }

@@ -3,6 +3,10 @@
 
     .et_pb_fullwidth_header_container{
         margin-top: 15vh;
+
+        @include media-max($tablet){
+            margin-top: 0;
+        }
     }
 
     .header-content{
@@ -16,6 +20,10 @@
             width: 646px;
             margin-bottom: 45px;
             font-family: $medium;
+
+            @include media-max($tablet){
+                width: 300px;
+            }
         }
     
         .et_pb_fullwidth_header_subhead{
