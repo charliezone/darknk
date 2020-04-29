@@ -10,8 +10,11 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
-
-mix.js('wp-content/themes/Divi-child/src/app.js', 'wp-content/themes/Divi-child/js').sass('wp-content/themes/Divi-child/scss/app.scss', 'wp-content/themes/Divi-child/css');
+mix.js('wp-content/themes/Divi-child/src/app.js', 'wp-content/themes/Divi-child/js')
+   .sass('wp-content/themes/Divi-child/scss/app.scss', 'wp-content/themes/Divi-child/css')
+   .options({
+        processCssUrls: false
+    });
 
 // Full API
 // mix.js(src, output);

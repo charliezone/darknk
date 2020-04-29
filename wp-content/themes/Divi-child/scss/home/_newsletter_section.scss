@@ -1,29 +1,103 @@
 .newsletter-section{
-    position: relative;
-    
-    h4{
-        left: 10px;
-        bottom: 30vh;
-        color: $white;
-        font-size: 26px;
-        position: absolute;
-        letter-spacing: 7px;
-        transform: rotate(-90deg);
+
+    .et_pb_row_3{
+        display: flex;
+        align-items: center;
     }
 
-    .emaillist{
-        label{
+    .newsletter-section-left{
+        .et_pb_module_header{
             color: $white;
-        }
-    
-        .es_txt_email{
-            width: 60%;
-            margin-bottom: 10px;
+            font-size: 60px;
+            font-family: $bold;
+            line-height: normal;
+            letter-spacing: 2.5px;
+
+            @include media-max($tablet){
+                font-size: 35px;
+            }
         }
 
-        input[type="submit"]{
-            margin-top: 10px;
-            @include cta-button();
+        .et_pb_blurb_description{
+            color: $white;
+            font-size: 24px;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-family: $regular;
+
+            @include media-max($tablet){
+                font-size: 18px;
+                text-align: left;
+            }
         }
-    } 
+    }
+
+    .newsletter-section-right{
+        .es-field-wrap{
+            display: flex;
+            justify-content: flex-end;
+
+            label{
+                width: 86%;
+                color: $white;
+                font-family: $regular;
+                letter-spacing: 1.5px;
+
+                @include media-max($tablet){
+                    width: 100%;
+                }
+
+                input{
+                    width: 100%;
+                    height: 35px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        p{
+            width: 86%;
+            text-align: right;
+            margin-left: auto;
+
+            @include media-max($tablet){
+                width: 100%;
+                text-align: left;
+            }
+
+            input{
+                bottom: -2px;
+                position: relative;
+            }
+
+            label{
+                color: $white;
+                font-family: $regular;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        .es_subscription_form_submit{
+            @include cta-button();
+            margin-top: 25px;
+            margin-left: auto;
+            text-transform: lowercase;
+        }
+
+        .es_subscription_message{
+            display: block;
+            margin-top: 5px;
+            text-align: right;
+            font-family: $regular;
+
+            &.success{
+                color: $white;
+            }
+        }
+
+        .es_spinner_image{
+            margin-left: 15px;
+        }
+    }
 }
