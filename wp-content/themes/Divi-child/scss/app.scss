@@ -7,12 +7,19 @@
 /* Navigation */
 @import 'common/navigation';
 
+/* Pagination */
+@import 'common/pagination';
+
 /* Home */
 @import 'home/hero_section_carousel';
 @import 'home/top_rank_section';
 @import 'home/membership_section';
 @import 'home/testimonials_section';
 @import 'home/newsletter_section';
+
+/* Products */
+@import 'store/products';
+@import 'store/sidebar';
 
 /* Blog */
 @import 'blog/hero_section_carousel';
