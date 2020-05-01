@@ -16,10 +16,12 @@ wp-content/*
 wp-content/plugins/hello.php
 wp-content/uploads/wp-migrate-db/
 wp-content/plugins/query-monitor/
+wp-content/plugins/duplicator/
 # ignore specific themes
 
 # ignore node dependency directories
 node_modules/
+wp-snapshots/
 
 # ignore log files and databases
 *.log
