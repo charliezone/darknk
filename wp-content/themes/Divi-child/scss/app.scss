@@ -20,6 +20,11 @@
 /* Products */
 @import 'store/products';
 @import 'store/sidebar';
+@import 'store/single_product';
+
+/* Cart */
+@import 'cart/_cart';
+@import 'cart/checkout';
 
 /* Blog */
 @import 'blog/hero_section_carousel';

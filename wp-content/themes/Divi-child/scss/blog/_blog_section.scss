@@ -43,18 +43,23 @@
             }
     
             .entry-title{
-                width: 45%;
                 grid-row: 1 / 2;
+                text-align: left;
+                font-family: $medium;
             }
     
             .post-content{
                 top: 120px;
                 grid-row: 1 / 2;
                 position: absolute;
-                padding: 10px 15px 0 80px;
+                padding: 10px 15px 0 66px;
                 border-top: 1.5px solid $cornflower-blue;
 
-                p{ text-align: left; }
+                p{ 
+                    text-align: left; 
+                    font-family: $regular;
+                    color: $cornflower-blue;
+                }
             }
     
             .post-meta{
@@ -62,9 +67,10 @@
             }
     
             &:nth-last-of-type(1){
-                display: block;
                 padding: 0;
+                display: block;
                 position: relative;
+                margin-bottom: -30px;
     
                 &:after{
                     top: 0;
@@ -95,6 +101,16 @@
                     position: absolute;
                     z-index: $z_index_2;
                 }
+            }
+        }
+
+        .pagination{
+            padding: 15px 5%;
+
+            .alignleft a,
+            .alignright a{
+                font-family: $regular;
+                color: $cornflower-blue;
             }
         }
     }

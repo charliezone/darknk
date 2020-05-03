@@ -1,0 +1,80 @@
+.single-product{
+    .woocommerce-breadcrumb a,
+    .woocommerce-breadcrumb,
+    .woocommerce-product-details__short-description{
+        font-family: $regular;
+        color: $cornflower-blue;
+    }
+
+    .product_title{
+        font-family: $bold;
+        color: $cornflower-blue;
+    }
+
+    .woocommerce-Price-amount{
+        font-family: $medium;
+        color: $cornflower-blue;
+    }
+
+    button[name="add-to-cart"]{
+        @include cta-button();
+    }
+
+    .product_meta .posted_in,
+    a{
+        font-family: $regular;
+        color: $cornflower-blue;
+    }
+
+    .description_tab a,
+    .reviews_tab a{
+        font-family: $medium;
+        color: $cornflower-blue;
+    }
+
+    .woocommerce-Tabs-panel--description{
+        h2{
+            font-family: $medium;
+            color: $cornflower-blue;
+        }
+
+        p{
+            font-family: $regular;
+            color: $cornflower-blue;
+        }
+    }
+
+    .related.products{
+        h2{
+            font-family: $medium;
+            color: $cornflower-blue;
+        }
+
+        .woocommerce-loop-product__title{
+            font-size: 20px;
+            font-weight: 300;
+            font-family: $light;
+            line-height: normal;
+            letter-spacing: 1.67px;
+            color: $cornflower-blue;
+            text-align: center;
+        }
+
+        .price{
+            text-align: center;
+        }
+
+        .woocommerce-Price-amount{
+            font-size: 20px;
+            text-align: center;
+            font-family: $bold;
+            line-height: normal;
+            letter-spacing: 1.67px;
+            color: $cornflower-blue;
+        }
+
+        .et_shop_image .et_overlay:before{
+            color: $cornflower-blue;
+        }
+    }
+}

@@ -1,8 +1,18 @@
 .hero-carousel{
     height: calc(100vh - 80px);
 
+    @include media-min($large-desktop){
+        height: 850px;
+        display: flex;
+        align-items: center;
+    }
+
     .et_pb_fullwidth_header_container{
         margin-top: 15vh;
+
+        @include media-min($large-desktop){
+            margin-top: 0;
+        }
 
         @include media-max($tablet){
             margin-top: 0;
@@ -32,11 +42,18 @@
             font-family: $light-italic;
         }
 
-        .et_pb_button_one{
-            @include cta-button($white);
+        .et_pb_header_content_wrapper{
             order: 3;
-            margin-left: auto;
-            display: block!important;
+            
+            .cta-btn{
+                @include cta-button($white);
+                margin-left: auto;
+                display: block!important;
+    
+                @include media-min($large-desktop){
+                    padding: 26px 38px!important;
+                }
+            }
         }
     }
 }

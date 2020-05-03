@@ -2,4 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .menu-item a{
+        font-family: $medium;
+        
+        @include media-min($large-desktop){
+            font-size: 21px;
+            line-height: normal;
+            letter-spacing: 1px;
+        }
+        
+    }
 }

@@ -1,4 +1,11 @@
 .top-rank-section{
+    .et_pb_row{
+        @include media-min($large-desktop){
+            display: flex;
+            align-items: center;
+        }
+    }
+
     .top-rank-text{
         padding: 0 21.5%;
 
@@ -14,6 +21,14 @@
             padding: 26px 0 26px 50px;
             font-family: $medium-italic;
             background-color: $cornflower-blue;
+
+            @include media-min($large-desktop){
+                height: 80px;
+                display: flex;
+                font-size: 24px;
+                align-items: center;
+                margin-bottom: 149px;
+            }
         }
 
         .title{
@@ -23,7 +38,12 @@
             margin-bottom: 30px;
             letter-spacing: 0.67px;
             color: $cornflower-blue;
-            border-bottom: solid 5px $cornflower-blue;
+            border-bottom: solid 2px $cornflower-blue;
+
+            @include media-min($large-desktop){
+                padding-right: 30%;
+                line-height: normal;
+            }
         }
 
         .content{
@@ -33,10 +53,21 @@
             font-family: $light;
             letter-spacing: 1px;
             margin-bottom: 45px;
+
+            @include media-min($large-desktop){
+                margin-bottom: 149px;
+                line-height: normal;
+                letter-spacing: 1px;
+                padding-right: 151px;
+            }
         }
 
         .cta-btn{
             @include cta-button();
+
+            @include media-min($large-desktop){
+                padding: 26px 62px!important;
+            }
 
             @include media-max($tablet){
                 margin: 0 auto;
@@ -99,6 +130,10 @@
             }
 
             .added_to_cart{ display: none; }
+        }
+
+        .owl-nav.topright{
+            right: calc(50% - 54px)!important;
         }
 
         .owl-next{

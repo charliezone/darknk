@@ -46,6 +46,10 @@
             font-weight: normal;
             font-stretch: normal;
 
+            @include media-min($large-desktop){
+                margin-bottom: 45px;
+            }
+
             @include media-max($tablet){
                 font-size: 18px;
             }
@@ -54,6 +58,10 @@
         .cta-btn{
             @include cta-button($white, $transparent, $white);
             margin-left: auto;
+
+            @include media-min($large-desktop){
+                padding: 26px 87px!important;
+            }
         }
     }
 }

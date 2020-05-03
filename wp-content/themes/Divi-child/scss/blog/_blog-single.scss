@@ -1,24 +1,42 @@
-@include media-min($tablet){
-    .heading-4{
-        position: absolute;
-        right: 0;
-        top: 70px;
+.single-post{
+    .entry-title{
+        font-family: $bold;
+        color: $cornflower-blue;
     }
-    
-    .et_pb_post.type-post{
-        text-align: right;
+
+    .post-meta{
+        font-family: $light;
+        color: $cornflower-blue;
     }
-    
-    .comment-form-author,
-    .comment-form-email,
-    .comment-form-url{
-        display: flex;
-    
-        input{
-            flex: 1;
+
+    .entry-content{
+        p{
+            font-family: $regular;
+            color: $cornflower-blue;
+        }
+
+        h2{
+            margin: 15px 0;
+            margin: 50px 0 15px;
+            font-family: $medium;
+            color: $cornflower-blue;
+        }
+
+        .wp-block-image figure{
+            margin-top: 0;
         }
     }
-    
+
+    .comment-reply-title{
+        margin-top: 50px;
+        color: $cornflower-blue;
+        font-family: $medium-italic;
+    }
+
+    .logged-in-as{
+        font-family: $regular;
+    }
+
     .form-submit{
         display: flex;
         justify-content: flex-end;
@@ -27,4 +45,17 @@
             @include cta-button();
         }
     }
+
+    @include media-min($tablet){
+        .comment-form-author,
+        .comment-form-email,
+        .comment-form-url{
+            display: flex;
+        
+            input{
+                flex: 1;
+            }
+        }
+    }
 }
+

@@ -1,0 +1,31 @@
+.woocommerce-cart{
+    .entry-title,
+    .woocommerce-Price-currencySymbol,
+    .woocommerce-Price-amount{
+        font-family: $bold;
+        color: $cornflower-blue;
+    }
+
+    .product-name a,
+    .cart_totals{
+        font-family: $medium;
+        color: $cornflower-blue;
+    }
+
+    thead th,
+    .cart-subtotal th,
+    .order-total th{
+        font-family: $regular;
+        color: $cornflower-blue;
+    }
+
+    .checkout-button,
+    .actions button{
+        @include cta-button();
+    }
+
+    .actions button{
+        margin-left: auto;
+    }
+    
+}
