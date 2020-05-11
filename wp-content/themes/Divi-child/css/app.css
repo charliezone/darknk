@@ -1419,6 +1419,11 @@
     font-size: 35px;
   }
 }
+@media screen and (max-width: 980px) {
+  .nosotros h2 {
+    text-align: left !important;
+  }
+}
 .nosotros p {
   font-size: 25px;
   line-height: 25px;
@@ -1429,5 +1434,10 @@
   .nosotros p {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .nosotros p {
+    text-align: left !important;
   }
 }
