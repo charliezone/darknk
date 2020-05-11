@@ -178,6 +178,68 @@
   background: transparent !important;
 }
 
+/* Contacto */
+.contacto h2 {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: HelveticaNeueLTStd-Bd;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1920px) {
+  .contacto h2 {
+    font-size: 30px;
+  }
+}
+.contacto h3 {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: HelveticaNeueLTStd-Roman;
+}
+@media screen and (min-width: 1920px) {
+  .contacto h3 {
+    font-size: 20px;
+  }
+}
+.contacto input,
+.contacto textarea {
+  font-size: 20px;
+  font-family: HelveticaNeueLTStd-Lt;
+  color: #0b1016;
+  background-color: #ffffff !important;
+}
+.contacto .et_contact_bottom_container p {
+  color: #ffffff;
+  font-family: HelveticaNeueLTStd-Lt;
+}
+.contacto .et_contact_bottom_container button {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: HelveticaNeueLTStd-Roman;
+  color: #0b1016 !important;
+  display: block !important;
+  padding: 7px 24px !important;
+  border-radius: 8px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  padding: 3px 24px !important;
+}
+.contacto .et_contact_bottom_container button:after {
+  content: "" !important;
+}
+.contacto .et-pb-contact-message {
+  color: #ffffff;
+  font-family: HelveticaNeueLTStd-Lt;
+}
+.contacto .et-pb-contact-message p {
+  color: #ffffff;
+  text-align: center;
+  font-family: HelveticaNeueLTStd-Lt;
+}
+
 /* Home */
 .hero-carousel {
   height: calc(100vh - 80px);
@@ -1343,5 +1405,29 @@
 .single-post .comment-form-email input,
 .single-post .comment-form-url input {
     flex: 1;
+  }
+}
+
+/*Nosotros*/
+.nosotros h2 {
+  font-size: 30px;
+  font-family: HelveticaNeueLTStd-Bd;
+  color: #0b1016;
+}
+@media screen and (min-width: 1920px) {
+  .nosotros h2 {
+    font-size: 35px;
+  }
+}
+.nosotros p {
+  font-size: 25px;
+  line-height: 25px;
+  font-family: HelveticaNeueLTStd-Lt;
+  color: #0b1016;
+}
+@media screen and (min-width: 1920px) {
+  .nosotros p {
+    font-size: 30px;
+    line-height: 30px;
   }
 }

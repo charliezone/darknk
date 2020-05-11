@@ -1,0 +1,54 @@
+.contacto{
+    h2{
+        color: $white;
+        font-size: 25px;
+        font-family: $bold;
+        margin-bottom: 15px;
+
+        @include media-min($large-desktop){
+            font-size: 30px;
+        }
+    }
+
+    h3{
+        color: $white;
+        font-size: 15px;
+        line-height: 15px;
+        font-family: $regular;
+
+        @include media-min($large-desktop){
+            font-size: 20px;
+        }
+    }
+
+    input,
+    textarea{
+        font-size: 20px;
+        font-family: $light;
+        color: $cornflower-blue;
+        background-color: $white!important;
+    }
+
+    .et_contact_bottom_container{
+        p{ 
+            color: $white;
+            font-family: $light;
+        }
+
+        button{
+            @include cta-button($white, $white);
+            padding: 3px 24px !important;
+        }
+    }
+
+    .et-pb-contact-message{
+        color: $white;
+        font-family: $light;
+
+        p{
+            color: $white;
+            text-align: center;
+            font-family: $light;
+        }
+    }
+}
