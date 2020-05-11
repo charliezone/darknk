@@ -20,8 +20,13 @@
     }
 
     .checkout-button,
-    .actions button{
+    .actions button,
+    .return-to-shop a{
         @include cta-button();
+    }
+
+    .return-to-shop a{
+        margin-bottom: 30px;
     }
 
     .actions button{

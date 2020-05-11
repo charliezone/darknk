@@ -8,10 +8,16 @@
     .newsletter-section-left{
         .et_pb_module_header{
             color: $white;
-            font-size: 60px;
+            font-size: 30px;
             font-family: $bold;
+            margin-bottom: 30px;
             line-height: normal;
             letter-spacing: 2.5px;
+
+            @include media-min($large-desktop){
+                font-size: 60px;
+                margin-bottom: 0;
+            }
 
             @include media-max($tablet){
                 font-size: 35px;
@@ -20,11 +26,15 @@
 
         .et_pb_blurb_description{
             color: $white;
-            font-size: 24px;
+            font-size: 20px;
             line-height: normal;
             letter-spacing: 1px;
             text-align: justify;
             font-family: $regular;
+
+            @include media-min($large-desktop){
+                font-size: 24px;
+            }
 
             @include media-max($tablet){
                 font-size: 18px;
@@ -42,7 +52,7 @@
                 width: 86%;
                 color: $white;
                 font-family: $regular;
-                letter-spacing: 1.5px;
+                letter-spacing: 1.3px;
 
                 @include media-min($large-desktop){
                     width: 100%;

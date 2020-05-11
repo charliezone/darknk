@@ -24,11 +24,18 @@
     .testimonial-content-left{
         h3{
             color: $white;
-            font-size: 60px;
+            font-size: 30px;
+            padding-bottom: 0;
             font-family: $bold;
             line-height: normal;
-            margin-bottom: 45px;
+            margin-bottom: 30px;
             letter-spacing: 2.5px;
+
+            @include media-min($large-desktop){
+                font-size: 60px;
+                margin-bottom: 45px;
+                padding-bottom: 10px;
+            }
 
             @include media-max($tablet){
                 font-size: 40px;
@@ -37,16 +44,18 @@
 
         p{
             color: $white;
-            font-size: 24px;
+            font-size: 20px;
             font-family: $bold;
             font-style: normal;
             line-height: normal;
             letter-spacing: 1px;
             text-align: justify;
             font-weight: normal;
+            margin-bottom: 30px;
             font-stretch: normal;
 
             @include media-min($large-desktop){
+                font-size: 24px;
                 margin-bottom: 45px;
             }
 
