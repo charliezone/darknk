@@ -1,5 +1,9 @@
 .newsletter-section{
 
+    @include media-between($tablet, $large-desktop){
+        padding-bottom: 0;
+    }
+
     .et_pb_row_3{
         display: flex;
         align-items: center;

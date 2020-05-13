@@ -37,8 +37,11 @@
 
         button{
             @include cta-button($white, $white);
-            padding: 3px 24px !important;
         }
+    }
+
+    .et_pb_contact_captcha{
+        height: 60px;
     }
 
     .et-pb-contact-message{

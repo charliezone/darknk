@@ -20,15 +20,27 @@
 	font-size: 24px;
 	letter-spacing: 1px;
 	font-family: $regular;
+	height: 60px!important;
+	width: 239px!important;
+	display: flex!important;
 	color: $color!important;
-	display: block!important;
-	padding: 7px 24px!important;
 	border-radius: 8px!important;
-	width: fit-content!important;
+    align-items: center!important;
 	background-color: $bgc!important;
 	border: 2px solid $bcolor!important;
+    justify-content: center!important;
 
 	&:after{
 		content: ''!important;
+		display: none!important;
+	}
+
+	@include media-min($large-desktop){
+		height: 80px!important;
+		width: 239px!important;
+	}
+
+	&:hover{
+		padding: 0;
 	}
 }
