@@ -1,6 +1,10 @@
 #main-footer{
     display: flex;
     justify-content: space-between;
+
+    @include media-max($tablet){
+        flex-direction: column;
+    }
 }
 
 #et-footer-nav{

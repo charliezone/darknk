@@ -112,6 +112,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 980px) {
+  #main-footer {
+    flex-direction: column;
+  }
+}
 
 #et-footer-nav {
   flex: 1;
