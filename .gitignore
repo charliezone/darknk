@@ -26,6 +26,6 @@ wp-snapshots/
 # ignore log files and databases
 *.log
 *.sqlite
-wp-content/themes/Divi-child/css/app.css
-wp-content/themes/Divi-child/js/app.js
+#wp-content/themes/Divi-child/css/app.css
+#wp-content/themes/Divi-child/js/app.js
 hosting.txt
