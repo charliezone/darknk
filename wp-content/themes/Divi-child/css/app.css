@@ -108,10 +108,34 @@
     color: #ffffff !important;
   }
 }
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#et-footer-nav {
+  flex: 1;
+  order: 2;
+}
+
+#footer-bottom {
+  flex: 1;
+  order: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+#footer-bottom .et-social-icons {
+  margin-left: 35%;
+}
+
 #menu-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding-right: 20%;
+  justify-content: flex-end;
+}
+#menu-footer .menu-item:nth-last-child(1) {
+  padding-right: 0;
 }
 #menu-footer .menu-item a {
   font-family: HelveticaNeueLTStd-Md;
@@ -1031,6 +1055,14 @@
   color: #0b1016;
 }
 
+.single-product #sidebar,
+.single-product #main-content .container:before {
+  display: none;
+}
+.single-product #left-area {
+  width: 100%;
+  padding-right: 0;
+}
 .single-product .woocommerce-breadcrumb a,
 .single-product .woocommerce-breadcrumb,
 .single-product .woocommerce-product-details__short-description {
@@ -1062,6 +1094,11 @@
 .single-product button[name=add-to-cart]:after {
   content: "" !important;
 }
+@media screen and (max-width: 980px) {
+  .single-product button[name=add-to-cart] {
+    margin-top: 15px;
+  }
+}
 .single-product .product_meta .posted_in,
 .single-product a {
   font-family: HelveticaNeueLTStd-Roman;
@@ -1079,6 +1116,24 @@
 .single-product .woocommerce-Tabs-panel--description p {
   font-family: HelveticaNeueLTStd-Roman;
   color: #0b1016;
+}
+.single-product .woocommerce-Reviews input[type=submit] {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: HelveticaNeueLTStd-Roman;
+  color: #ffffff !important;
+  display: block !important;
+  padding: 7px 24px !important;
+  border-radius: 8px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background-color: #ffffff !important;
+  border: 2px solid #0b1016 !important;
+  margin-left: auto !important;
+}
+.single-product .woocommerce-Reviews input[type=submit]:after {
+  content: "" !important;
 }
 .single-product .related.products h2 {
   font-family: HelveticaNeueLTStd-Md;
