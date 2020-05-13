@@ -1,0 +1,76 @@
+.testimonials-section{
+    height: 100vh;
+
+    .et_pb_slider .et_pb_slide{
+        height: 100vh;
+    }
+}
+
+.testimonials-section-overlay{
+    height: 100vh;
+    display: flex;
+    margin-top: -100vh;
+    background-color: transparent;
+
+    .et_pb_row{
+        display: flex;
+        align-items: center;
+
+        @include media-max($tablet){
+            display: block;
+        }
+    }
+
+    .testimonial-content-left{
+        h3{
+            color: $white;
+            font-size: 30px;
+            padding-bottom: 0;
+            font-family: $bold;
+            line-height: normal;
+            margin-bottom: 30px;
+            letter-spacing: 2.5px;
+
+            @include media-min($large-desktop){
+                font-size: 60px;
+                margin-bottom: 45px;
+                padding-bottom: 10px;
+            }
+
+            @include media-max($tablet){
+                font-size: 40px;
+            }
+        }
+
+        p{
+            color: $white;
+            font-size: 20px;
+            font-family: $bold;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-weight: normal;
+            margin-bottom: 30px;
+            font-stretch: normal;
+
+            @include media-min($large-desktop){
+                font-size: 24px;
+                margin-bottom: 45px;
+            }
+
+            @include media-max($tablet){
+                font-size: 18px;
+            }
+        }
+
+        .cta-btn{
+            @include cta-button($white, $transparent, $white);
+            margin-left: auto;
+
+            @include media-min($large-desktop){
+                padding: 26px 87px!important;
+            }
+        }
+    }
+}

@@ -568,7 +568,7 @@ class WpMenuCart {
 			//use regular WP i18n
 			$viewing_cart = __('View your shopping cart', 'wp-menu-cart');
 			$start_shopping = __('Start shopping', 'wp-menu-cart');
-			$cart_contents = sprintf(_n('%d item', '%d items', $item_data['cart_contents_count'], 'wp-menu-cart'), $item_data['cart_contents_count']);
+			$cart_contents = sprintf(_n('%d', '%d', $item_data['cart_contents_count'], 'wp-menu-cart'), $item_data['cart_contents_count']);
 		}	
 
 		$this->menu_items['menu']['cart_contents'] = $cart_contents;

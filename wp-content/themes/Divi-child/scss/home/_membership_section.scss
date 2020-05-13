@@ -1,0 +1,114 @@
+.merbership-section{
+    display: flex;
+    align-items: center;
+
+    @include media-max($tablet){
+        display: block;
+    }
+
+    .et_pb_row_1{
+        display: flex;
+        align-items: center;
+
+        @include media-max($tablet){
+            display: block;
+        }
+    }
+
+    .membership-content-left{
+        .et_pb_blurb_content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .et_pb_blurb_container{
+                order: 1;
+            }
+
+            .et_pb_blurb_container .et_pb_module_header{
+                color: $white;
+                font-size: 30px;
+                padding-bottom: 0;
+                font-family: $bold;
+                margin-bottom: 30px;
+                letter-spacing: 2.5px;
+
+                @include media-min($large-desktop){
+                    font-size: 60px;
+                    margin-bottom: 45px;
+                    line-height: normal;
+                    padding-bottom: 10px;
+                }
+
+                @include media-max($tablet){
+                    font-size: 40px;
+                }
+            }
+
+            .et_pb_blurb_container .et_pb_blurb_description{
+                color: $white;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 45px;
+                font-family: $medium;
+                letter-spacing: 1.5px;
+
+                @include media-min($large-desktop){
+                    font-size: 36px;
+                }
+            }
+
+            .wp-video-popup{
+                order: 2;
+                border: none;
+                background-color: transparent;
+
+                .et-pb-icon{
+                    color: $white;
+                    font-size: 46px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .membership-content-right{
+        .et_pb_text_inner{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        .et_pb_text_inner p{
+            color: $white;
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: justify;
+            line-height: normal;
+            margin-bottom: 45px;
+            font-family: $regular;
+
+            @include media-min($large-desktop){
+                font-size: 24px;
+            }
+
+            @include media-max($tablet){
+                text-align: left;
+            }
+        }
+
+        .cta-btn{
+            @include cta-button($white, $transparent, $white);
+
+            @include media-min($large-desktop){
+                padding: 26px 62px!important;
+            }
+        }
+    }
+}
+
+.popup-wraper{
+    display: none;
+}

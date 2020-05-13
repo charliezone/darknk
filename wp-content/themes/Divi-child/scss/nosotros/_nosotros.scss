@@ -1,0 +1,31 @@
+.nosotros{
+    h2{
+        font-size: 30px;
+        font-family: $bold;
+        color: $cornflower-blue;
+
+        @include media-min($large-desktop){
+            font-size: 35px;
+        }
+
+        @include media-max($tablet){
+            text-align: left!important;
+        }
+    }
+
+    p{
+        font-size: 25px;
+        line-height: 25px;
+        font-family: $light;
+        color: $cornflower-blue;
+
+        @include media-min($large-desktop){
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @include media-max($tablet){
+            text-align: left!important;
+        }
+    }
+}

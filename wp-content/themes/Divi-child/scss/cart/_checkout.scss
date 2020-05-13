@@ -1,0 +1,43 @@
+.woocommerce-checkout{
+    .entry-title{
+        font-family: $bold;
+        color: $cornflower-blue;
+    }
+
+    .woocommerce-billing-fields{
+        h3{
+                font-family: $medium;
+                color: $cornflower-blue;
+        }
+    }
+
+    label{
+        font-family: $regular;
+        color: $cornflower-blue;
+    }
+
+    .woocommerce-additional-fields h3{
+        font-family: $medium;
+        color: $cornflower-blue;
+    }
+
+    #order_review_heading{
+        margin: 50px 0 20px;
+        font-family: $medium;
+        color: $cornflower-blue;
+    }
+
+    .about_paypal{
+        color: $cornflower-blue;
+        font-family: $medium-italic;
+    }
+
+    .woocommerce-privacy-policy-link{
+        color: $cornflower-blue;
+    }
+
+    button[name="woocommerce_checkout_place_order"]{
+        @include cta-button($cornflower-blue, $transparent, $cornflower-blue);
+        margin: 25px 0 15px;
+    }
+}

@@ -1,3 +1,5 @@
+wp-config.php
+
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
 
@@ -7,17 +9,23 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
+!wp-content/uploads/
+!wp-content/languages/
 
 # ignore these plugins
 wp-content/plugins/hello.php
-
+wp-content/uploads/wp-migrate-db/
+wp-content/plugins/query-monitor/
+wp-content/plugins/duplicator/
 # ignore specific themes
-wp-content/themes/twenty*/
 
 # ignore node dependency directories
 node_modules/
+wp-snapshots/
 
 # ignore log files and databases
 *.log
-*.sql
 *.sqlite
+wp-content/themes/Divi-child/css/app.css
+wp-content/themes/Divi-child/js/app.js
+hosting.txt

@@ -1,0 +1,40 @@
+@import 'common/fonts';
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/navigation';
+@import 'common/footer';
+
+/* Navigation */
+@import 'common/navigation';
+
+/* Pagination */
+@import 'common/pagination';
+
+/* Contacto */
+
+@import 'common/contacto';
+
+/* Home */
+@import 'home/hero_section_carousel';
+@import 'home/top_rank_section';
+@import 'home/membership_section';
+@import 'home/testimonials_section';
+@import 'home/newsletter_section';
+
+/* Products */
+@import 'store/products';
+@import 'store/sidebar';
+@import 'store/single_product';
+
+/* Cart */
+@import 'cart/_cart';
+@import 'cart/checkout';
+
+/* Blog */
+@import 'blog/hero_section_carousel';
+@import 'blog/blog_section';
+@import 'blog/blog-single';
+
+/*Nosotros*/
+
+@import 'nosotros/nosotros';
