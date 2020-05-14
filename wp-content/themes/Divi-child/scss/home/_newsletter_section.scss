@@ -1,6 +1,7 @@
 .newsletter-section{
 
     @include media-between($tablet, $large-desktop){
+        padding-top: 70px;
         padding-bottom: 0;
     }
 
