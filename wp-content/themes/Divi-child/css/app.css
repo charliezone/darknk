@@ -881,6 +881,7 @@
 
 @media screen and (min-width: 980px) and (max-width: 1920px) {
   .newsletter-section {
+    padding-top: 70px;
     padding-bottom: 0;
   }
 }
