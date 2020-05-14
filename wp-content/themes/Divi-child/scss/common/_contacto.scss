@@ -1,23 +1,23 @@
 .contacto{
     h2{
         color: $white;
-        font-size: 25px;
+        font-size: 35px;
         font-family: $bold;
         margin-bottom: 15px;
 
         @include media-min($large-desktop){
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
     h3{
         color: $white;
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 27px;
+        line-height: 30px;
         font-family: $regular;
 
         @include media-min($large-desktop){
-            font-size: 20px;
+            font-size: 30px;
         }
     }
 
@@ -29,7 +29,15 @@
         background-color: $white!important;
     }
 
+    p[data-type="email"]{
+        width: 60%;
+    }
+
     .et_contact_bottom_container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
         p{ 
             color: $white;
             font-family: $light;
@@ -37,7 +45,6 @@
 
         button{
             @include cta-button($white, $white);
-            padding: 3px 24px !important;
         }
     }
 

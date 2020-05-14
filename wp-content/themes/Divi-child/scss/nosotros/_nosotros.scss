@@ -1,11 +1,11 @@
 .nosotros{
     h2{
-        font-size: 30px;
+        font-size: 20px;
         font-family: $bold;
         color: $cornflower-blue;
 
         @include media-min($large-desktop){
-            font-size: 35px;
+            font-size: 25px;
         }
 
         @include media-max($tablet){
@@ -14,14 +14,15 @@
     }
 
     p{
-        font-size: 25px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 20px;
         font-family: $light;
+        letter-spacing: 1.4px;
         color: $cornflower-blue;
 
         @include media-min($large-desktop){
-            font-size: 30px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 20px;
         }
 
         @include media-max($tablet){

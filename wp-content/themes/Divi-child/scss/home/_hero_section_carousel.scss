@@ -59,11 +59,6 @@
             .cta-btn{
                 @include cta-button($white);
                 margin-left: auto;
-                display: block!important;
-    
-                @include media-min($large-desktop){
-                    padding: 26px 38px!important;
-                }
             }
         }
     }

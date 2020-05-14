@@ -28,6 +28,8 @@
 
     button[name="add-to-cart"]{
         @include cta-button();
+        width: 190px!important;
+        padding: 0!important;
 
         @include media-max($tablet){
             margin-top: 15px;

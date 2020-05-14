@@ -1,10 +1,16 @@
 #main-footer{
+    padding: 0;
     display: flex;
+    background-color: #080e14;
     justify-content: space-between;
 
     @include media-max($tablet){
         flex-direction: column;
     }
+}
+
+.home #main-footer{
+    padding: 100px 0;
 }
 
 #et-footer-nav{
