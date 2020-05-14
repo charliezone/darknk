@@ -17,18 +17,19 @@
 }
 
 @mixin cta-button($bcolor: $cornflower-blue, $bgc: $white, $color: $cornflower-blue){
-	font-size: 24px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	font-family: $regular;
-	height: 60px!important;
-	width: 239px!important;
+	height: 50px!important;
+	width: 170px!important;
 	display: flex!important;
 	color: $color!important;
 	border-radius: 8px!important;
     align-items: center!important;
 	background-color: $bgc!important;
 	border: 2px solid $bcolor!important;
-    justify-content: center!important;
+	justify-content: center!important;
+	padding: 0;
 
 	&:after{
 		content: ''!important;
@@ -36,6 +37,7 @@
 	}
 
 	@include media-min($large-desktop){
+		font-size: 24px;
 		height: 80px!important;
 		width: 239px!important;
 	}
