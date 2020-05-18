@@ -31,10 +31,10 @@
 
         .et_pb_blurb_description{
             color: $white;
-            font-size: 20px;
-            line-height: normal;
-            letter-spacing: 1px;
+            font-size: 18px;
+            line-height: 20px;
             text-align: justify;
+            letter-spacing: 1.4px;
             font-family: $regular;
 
             @include media-min($large-desktop){

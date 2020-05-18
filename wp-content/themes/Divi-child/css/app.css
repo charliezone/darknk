@@ -735,11 +735,10 @@
 }
 .merbership-section .membership-content-right .et_pb_text_inner p {
   color: #ffffff;
-  font-size: 20px;
-  line-height: normal;
+  font-size: 18px;
+  line-height: 20px;
   letter-spacing: 1px;
   text-align: justify;
-  line-height: normal;
   margin-bottom: 45px;
   font-family: HelveticaNeueLTStd-Roman;
 }
@@ -837,15 +836,15 @@
 }
 .testimonials-section-overlay .testimonial-content-left p {
   color: #ffffff;
-  font-size: 20px;
-  font-family: HelveticaNeueLTStd-Bd;
+  font-size: 18px;
+  line-height: 20px;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: 1px;
   text-align: justify;
   font-weight: normal;
   margin-bottom: 30px;
   font-stretch: normal;
+  font-family: HelveticaNeueLTStd-Roman;
+  letter-spacing: 1.4px;
 }
 @media screen and (min-width: 1920px) {
   .testimonials-section-overlay .testimonial-content-left p {
@@ -925,10 +924,10 @@
 }
 .newsletter-section .newsletter-section-left .et_pb_blurb_description {
   color: #ffffff;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 20px;
   text-align: justify;
+  letter-spacing: 1.4px;
   font-family: HelveticaNeueLTStd-Roman;
 }
 @media screen and (min-width: 1920px) {
@@ -1208,6 +1207,13 @@
   font-family: HelveticaNeueLTStd-Bd;
   color: #0b1016;
 }
+.single-product .woocommerce-product-details__short-description p {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: HelveticaNeueLTStd-Roman;
+  letter-spacing: 1.4px;
+  color: #0b1016;
+}
 .single-product .woocommerce-Price-amount {
   font-family: HelveticaNeueLTStd-Md;
   color: #0b1016;
@@ -1263,8 +1269,10 @@
   color: #0b1016;
 }
 .single-product .woocommerce-Tabs-panel--description p {
-  font-family: HelveticaNeueLTStd-Roman;
-  color: #0b1016;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: HelveticaNeueLTStd-Lt;
+  letter-spacing: 1.4px;
 }
 .single-product .woocommerce-Reviews input[type=submit] {
   font-size: 18px;
@@ -1515,7 +1523,8 @@
 .blog-section article .entry-title {
   grid-row: 1/2;
   text-align: left;
-  font-family: HelveticaNeueLTStd-Md;
+  font-family: HelveticaNeueLTStd-Bd;
+  color: #0b1016;
 }
 .blog-section article .post-content {
   top: 120px;
@@ -1532,8 +1541,10 @@
   }
 }
 .blog-section article .post-content p {
-  text-align: left;
-  font-family: HelveticaNeueLTStd-Roman;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: HelveticaNeueLTStd-Lt;
+  letter-spacing: 1.4px;
   color: #0b1016;
 }
 .blog-section article .post-meta {
@@ -1589,6 +1600,14 @@
   color: #0b1016;
 }
 
+.single-post #sidebar,
+.single-post #main-content .container:before {
+  display: none;
+}
+.single-post #left-area {
+  width: 100%;
+  padding-right: 0;
+}
 .single-post .entry-title {
   font-family: HelveticaNeueLTStd-Bd;
   color: #0b1016;
@@ -1598,7 +1617,10 @@
   color: #0b1016;
 }
 .single-post .entry-content p {
-  font-family: HelveticaNeueLTStd-Roman;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: HelveticaNeueLTStd-Lt;
+  letter-spacing: 1.4px;
   color: #0b1016;
 }
 .single-post .entry-content h2 {

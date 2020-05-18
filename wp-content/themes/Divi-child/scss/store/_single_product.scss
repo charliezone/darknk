@@ -21,6 +21,14 @@
         color: $cornflower-blue;
     }
 
+    .woocommerce-product-details__short-description p{
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $regular;
+        letter-spacing: 1.4px;
+        color: $cornflower-blue;
+    }
+
     .woocommerce-Price-amount{
         font-family: $medium;
         color: $cornflower-blue;
@@ -55,8 +63,10 @@
         }
 
         p{
-            font-family: $regular;
-            color: $cornflower-blue;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: $light;
+            letter-spacing: 1.4px;
         }
     }
 
