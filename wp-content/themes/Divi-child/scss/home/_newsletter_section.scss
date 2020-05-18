@@ -140,3 +140,17 @@
         }
     }
 }
+
+.home .newsletter-section{
+    @include media-min($tablet){
+        height: calc(100vh - 257px - 62px);
+        display: flex;
+        align-items: center;
+    }
+
+    .et_pb_row_4{
+        @include media-min($tablet){
+            
+        }
+    }
+}
