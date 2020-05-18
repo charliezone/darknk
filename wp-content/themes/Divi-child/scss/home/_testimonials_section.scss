@@ -44,15 +44,15 @@
 
         p{
             color: $white;
-            font-size: 20px;
-            font-family: $bold;
+            font-size: 18px;
+            line-height: 20px;
             font-style: normal;
-            line-height: normal;
-            letter-spacing: 1px;
             text-align: justify;
             font-weight: normal;
             margin-bottom: 30px;
             font-stretch: normal;
+            font-family: $regular;
+            letter-spacing: 1.4px;
 
             @include media-min($large-desktop){
                 font-size: 24px;

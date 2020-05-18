@@ -61,7 +61,8 @@
         .entry-title{
             grid-row: 1 / 2;
             text-align: left;
-            font-family: $medium;
+            font-family: $bold;
+            color: $cornflower-blue;
         }
 
         .post-content{
@@ -78,8 +79,10 @@
             }
 
             p{ 
-                text-align: left; 
-                font-family: $regular;
+                font-size: 18px;
+                line-height: 20px;
+                font-family: $light;
+                letter-spacing: 1.4px;
                 color: $cornflower-blue;
             }
         }

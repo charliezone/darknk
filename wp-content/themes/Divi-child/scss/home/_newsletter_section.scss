@@ -31,10 +31,10 @@
 
         .et_pb_blurb_description{
             color: $white;
-            font-size: 20px;
-            line-height: normal;
-            letter-spacing: 1px;
+            font-size: 18px;
+            line-height: 20px;
             text-align: justify;
+            letter-spacing: 1.4px;
             font-family: $regular;
 
             @include media-min($large-desktop){
@@ -137,6 +137,20 @@
 
         .es_spinner_image{
             margin-left: 15px;
+        }
+    }
+}
+
+.home .newsletter-section{
+    @include media-min($tablet){
+        height: calc(100vh - 257px - 62px);
+        display: flex;
+        align-items: center;
+    }
+
+    .et_pb_row_4{
+        @include media-min($tablet){
+            
         }
     }
 }

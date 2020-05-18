@@ -1,4 +1,14 @@
 .single-post{
+    #sidebar,
+    #main-content .container:before{
+        display: none;
+    }
+
+    #left-area{
+        width: 100%;
+        padding-right: 0;
+    }
+
     .entry-title{
         font-family: $bold;
         color: $cornflower-blue;
@@ -11,7 +21,10 @@
 
     .entry-content{
         p{
-            font-family: $regular;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: $light;
+            letter-spacing: 1.4px;
             color: $cornflower-blue;
         }
 
