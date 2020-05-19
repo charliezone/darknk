@@ -231,9 +231,10 @@
 /* Contacto */
 .contacto h2 {
   color: #ffffff;
-  font-size: 35px;
   font-family: HelveticaNeueLTStd-Bd;
+  line-height: normal;
   margin-bottom: 15px;
+  letter-spacing: 2.5px;
 }
 @media screen and (min-width: 1920px) {
   .contacto h2 {
@@ -242,8 +243,9 @@
 }
 .contacto h3 {
   color: #ffffff;
-  font-size: 27px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.4px;
   font-family: HelveticaNeueLTStd-Roman;
 }
 @media screen and (min-width: 1920px) {
@@ -1465,6 +1467,16 @@
   text-align: right;
 }
 
+.page-id-55 .et_pb_slide_title a {
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 40px !important;
+}
+@media screen and (min-width: 1920px) {
+  .page-id-55 .et_pb_slide_title a {
+    font-size: 48px !important;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .blog-section {
     padding-top: 0;
@@ -1581,8 +1593,16 @@
   color: #ffffff;
   bottom: 100px;
   line-height: 30px;
+  line-height: 46px;
   position: absolute;
   z-index: 10;
+  font-family: HelveticaNeueLTStd-Md;
+  font-size: 40px !important;
+}
+@media screen and (min-width: 1920px) {
+  .blog-section article:nth-last-of-type(1) .entry-title {
+    font-size: 48px !important;
+  }
 }
 @media screen and (max-width: 980px) {
   .blog-section article:nth-last-of-type(1) .entry-title {

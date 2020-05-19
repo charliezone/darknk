@@ -1,4 +1,15 @@
 
+.page-id-55{
+    .et_pb_slide_title a{
+        font-family: $medium;
+        font-size: 40px!important;
+
+        @include media-min($large-desktop){
+            font-size: 48px!important;
+        }
+    }
+}
+
 .blog-section{
     @include media-max($tablet){
         padding-top: 0;
@@ -123,8 +134,15 @@
                 color: $white;
                 bottom: 100px;
                 line-height: 30px;
+                line-height: 46px;
                 position: absolute;
                 z-index: $z_index_2;
+                font-family: $medium;
+                font-size: 40px!important;
+
+                @include media-min($large-desktop){
+                    font-size: 48px!important;
+                }
 
                 @include media-max($tablet){
                     left: 10%;
