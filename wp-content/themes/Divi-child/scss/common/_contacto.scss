@@ -1,9 +1,10 @@
 .contacto{
     h2{
         color: $white;
-        font-size: 35px;
         font-family: $bold;
+        line-height: normal;
         margin-bottom: 15px;
+        letter-spacing: 2.5px;
 
         @include media-min($large-desktop){
             font-size: 40px;
@@ -12,8 +13,9 @@
 
     h3{
         color: $white;
-        font-size: 27px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1.4px;
         font-family: $regular;
 
         @include media-min($large-desktop){
